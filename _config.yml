@@ -21,6 +21,7 @@ nav:
   Home: .
   Archive: archives
   Links: /links
+  Log: /log
   About: /about
   RSS: atom.xml
   # about: about

@@ -1,13 +1,12 @@
 # basic
-title: Daily
-subtitle: Minimalism, simplicity and refined details
-favicon: https://hexo.io/icon/favicon-96x96.png
+title: Carter's Blog
+subtitle: Think Different
+favicon: https://cl.ly/073Y3j470U2X/favicon.png
 
 # avatar: images/avatar.png
 # banner_small: images/banner-small.png
 # banner_large: images/banner-large.png
-logo: https://hexo.io/logo.svg
-
+logo: https://cl.ly/2r000P311v3X/C.png
 # disqus
 #disqus_shortname: drakeleung
 
@@ -19,8 +18,11 @@ highlight:
 
 # nav #
 nav:
-  home: .
-  archive: archives
+  Home: .
+  Archive: archives
+  Links: /links
+  About: /about
+  RSS: atom.xml
   # about: about
   # rss: atom.xml
 
@@ -35,16 +37,39 @@ default_post_title: Untitled
 
 # social
 social:
-  github: https://github.com/GallenHu
+  github: https://github.com/CarterJimmy
+  flickr: https://www.flickr.com/photos/146675969@N03/
+  telegram: https://t.me/carterjimmy/
+
   # weibo: http://weibo.com/10010800
   # mail: mailto:gallenhu@foxmail.com
   # twitter: https://twitter.com/GallenHu
+
+
+#local_search
+#定义搜索
+search:
+  path: search.xml
+  field: post
+
+
+# RSS FeedSetting
+rss: /atom.xml
+
+# Local search
+local_search:
+  enable: true
+
+# 评论
+disqus_shortname: carters-blog
+
+
 
 # widget
 #   title: 标题
 #   content: 内容
 widget:
-  title: 关于本站
-  content: <ul><li><a href="https://github.com/GallenHu/hexo-theme-Daily/wiki">如何自定义这里的内容(配置教程)?</a></li></ul>
+  title: About
+  content: <div><a align="center">专注记录技术与生活</a></div>
 
 footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a>

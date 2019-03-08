@@ -8,7 +8,7 @@
   left: 0;
   padding-left: 50px;
   padding-right: 50px;
-  height: 70px;
+  height: 85px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -30,22 +30,18 @@
   }
 }
 .header-inside {
-  display: block;
-  position: relative;
+  display: table;
   height: 100%;
   width: 100%;
 }
 .logo {
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  display: table-cell;
   vertical-align: middle;
   a {
-    display: block;
+    display: inline-block;
     img {
       display: block;
-      height: $header-height - 10px;
+      height: $header-height - 15px;
     }
   }
 }
@@ -66,7 +62,7 @@
       margin-left: 20px;
       a {
         text-decoration: none;
-        line-height: 1.5;
+        line-height: 2;
         &:hover {
           opacity: 1;
         }

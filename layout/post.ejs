@@ -1,3 +1,4 @@
+
 <div class="content-area">
   <div class="post">
     <!-- Post Content -->
@@ -25,7 +26,7 @@
           </div>
         </div>
         <!-- Post Main Content -->
-        <div class="entry-content <%if(config.highlight.line_number){%>has_line_number<%} %>">
+        <div class="entry-content">
           <%- page.content %>
         </div>
       </article>
@@ -40,12 +41,12 @@
     <div class="nav-links">
       <% if (page.prev) { %>
         <div class="nav-previous">
-          <a href="<%- config.root %><%- page.prev.path %>" rel="prev"><span class="meta-arraw meta-arraw-left"></span> <%- __('prev')%></a>
+          <a href="<%- config.root %><%- page.prev.path %>" rel="prev"><span class="meta-arraw meta-arraw-left"></span> <%- __('next')%></a>
         </div>
       <% } %>
       <% if (page.next) { %>
         <div class="nav-next">
-          <a href="<%- config.root %><%- page.next.path %>" rel="prev"><%- __('next')%> <span class="meta-arraw meta-arraw-right"></span></a>
+          <a href="<%- config.root %><%- page.next.path %>" rel="prev"><%- __('prev')%> <span class="meta-arraw meta-arraw-right"></span></a>
         </div>
       <% } %>
     </div>

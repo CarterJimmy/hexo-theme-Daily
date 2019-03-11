@@ -61,3 +61,10 @@
     opacity: 0.8;
   }
 }
+
+
+//高亮文本选中特效
+::selection {
+  background:#27afa5;
+  color:#f7f7f7;
+}

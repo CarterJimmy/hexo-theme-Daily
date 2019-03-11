@@ -5,7 +5,7 @@
   <% if(config.disqus_shortname) { %>
 
     <div style="text-align:center;">
-      <button  id="load-disqus" onclick="disqus.load();">加载 Disqus 评论 (请确保能正常访问Disqus) </button>
+      <button  id="load-disqus" onclick="disqus.load(); this.style.visibility='hidden';" >加载 Disqus 评论 (请确保能正常访问Disqus) </button>
     </div>
 <!-- Definition For Click2Load Disqus -->
 <!-- 点击加载Disqus评论设置 -->
@@ -22,10 +22,6 @@
   </div>
 
 
-  <% } else if (config.duoshuo_shortnam) { %>
-    <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="<%= page.layout %>-<%= page.slug %>" data-title="<%= page.title %>" data-url="<%= page.permalink %>"></div>
-    <!-- 多说评论框 end -->
   <% } %>
 </section>
 <% } %>

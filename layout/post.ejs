@@ -1,4 +1,24 @@
 
+<script>
+$(document).ready(function(){
+  $("nav-links").hide();
+  $(function(){
+    //检测屏幕高度
+    var height=$(window).height();
+    //scroll()方法为滚动事件
+    $(window).scroll(function(){
+        if ($(window).scrollTop()>height){
+           $("nav-links").fadeIn(500);
+        }else{
+           $("nav-links").fadeOut(500);
+        }
+    });
+  });
+});
+</script>
+
+
+
 <div class="content-area">
   <div class="post">
     <!-- Post Content -->
@@ -38,6 +58,8 @@
         }) %>
     </div>
     <!-- Pre or Next -->
+
+
     <div class="nav-links">
       <% if (page.prev) { %>
         <div class="nav-previous">
